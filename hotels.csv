@@ -2,13 +2,13 @@ id,name,city,capacity,available
 134,Tourist Sunny Apartment,Anchorage,4,no
 188,Snow Palace,New Delhi,5,yes
 655,City Break Inn,Porto-Novo,3,yes
-201,Ocean View Resort,Miami,6,yes
+201,Ocean View Resort,Miami,6,no
 302,Mountain Retreat,Denver,4,yes
 415,Urban Oasis,Tokyo,2,yes
 528,Lakeside Lodge,Chicago,8,no
 639,Desert Mirage,Las Vegas,5,yes
 740,Historic Charm Inn,New Orleans,3,yes
-851,Seaside Escape,San Diego,4,yes
+851,Seaside Escape,San Diego,4,no
 962,Forest Hideaway,Vancouver,2,yes
 1073,City Lights Hotel,New York,5,yes
 1184,Coastal Breeze,San Francisco,3,no
