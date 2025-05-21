@@ -1,4 +1,5 @@
 import pandas
+from abc import ABC, abstractmethod
 
 df = pandas.read_csv('hotels.csv', dtype={'id': str})
 df_cards = pandas.read_csv('cards.csv', dtype=str).to_dict(orient='records')
@@ -34,7 +35,13 @@ class Spa(Hotel):
         pass
 
 
-class ReservationTicket:
+class Ticket(ABC):
+    @abstractmethod
+    def generate(self):
+        pass
+
+
+class ReservationTicket(Ticket):
     def __init__(self, customer_name, hotel_obj):
         self.customer_name = customer_name
         self.hotel = hotel_obj
@@ -88,9 +95,9 @@ def main():
                 hotel.book()
                 name = input('Enter your name: ')
                 reservation_ticket = ReservationTicket(
-                        customer_name=name,
-                        hotel_obj=hotel
-                    )
+                    customer_name=name,
+                    hotel_obj=hotel
+                )
                 print(reservation_ticket.generate())
                 ask = input("Are you ready for spa: ")
                 if ask == 'yes':
